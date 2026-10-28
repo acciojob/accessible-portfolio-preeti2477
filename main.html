@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accessible Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1 role="heading">John Doe - Web Developer</h1>
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+                <li role="listitem"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="about">
+            <img role="img" src="https://via.placeholder.com/200" alt="Profile picture of John Doe">
+            <p>Hello! I am a passionate web developer focused on building accessible and user-friendly web experiences for everyone, including users with disabilities.</p>
+        </section>
+
+        <section id="skills">
+            <h1 role="heading">My Skills</h1>
+            <ul role="list">
+                <li role="listitem">HTML, CSS, JavaScript - Accessible Web Development</li>
+                <li role="listitem">React and Responsive Design</li>
+                <li role="listitem">ARIA Roles and WCAG Compliance</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
